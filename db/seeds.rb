@@ -25,6 +25,8 @@ liliana.photo.attach(io: open("app/assets/images/user2.jpeg"), filename: "user2.
 
 puts "Creating projects"
 
+5.times do
+
 Project.create(user: carlos,
   name: "Bubu nana bubu lina",
   description: "TTRR works with individuals with a variety of backgrounds, particularly those with experience in private equity, management consulting, investment banking, or venture capital. We talk to all candidates individually to understand their interests and priorities for their next role and work hard to set them up for success in interviews and beyond. Our hope is to develop long-term relationships with all candidates to help them find their ideal roles both now and in the future.",
@@ -52,3 +54,5 @@ Project.create(user: liliana,
   company_website: "https://fundacionsi.org.ar/",
   duration: "35 hours",
   technologies: "React, SQL")
+
+end
