@@ -1,11 +1,37 @@
-<p id="notice"><%= notice %></p>
+<section class="slice bg-white pt-0">
+  <div data-offset-top="#navbar-main">
+    <div class="container py-5">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-8 text-center">
+          <%= image_tag "office.svg" %>
+        </div>
+      </div>
+    </div>
+    <div class="shape-container shape-position-bottom shape-reverse">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+        <path d="M 0 0 c 0 0 200 50 500 50 s 500 -50 500 -50 v 101 h -1000 v -100 z"></path>
+      </svg>
+    </div>
+  </div>
+</section>
 
-<h1>Projects</h1>
-
-<% @projects.each do |project| %>
-  <tr>
-    <td><%= project.name %></td>
-    <td><%= project.description %></td>
-    <td><%= project.user_id %></td>
-  </tr>
-<% end %>
+<section class="slice bg-ecodev">
+  <div class="container text-center">
+    <h4 class="text-white">¡Explorá los proyectos disponibles!</h4>
+    <div class="cards p-3 mt-5">
+      <% @projects.each do |project| %>
+        <%= link_to project_path(project), class: "card-link" do %>
+          <div class="card-trip">
+            <%= cl_image_tag project.photo.key %>
+            <div class="card-trip-infos">
+              <div>
+                <h2><%= project.company %></h2>
+                <p><%= project.description.truncate_words(20) %></p>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</section>

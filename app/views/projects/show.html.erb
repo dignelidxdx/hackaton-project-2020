@@ -1,19 +1,83 @@
-<p id="notice"><%= notice %></p>
+<section class="slice pt-6 pb-8 bg-ecodev">
+  <div data-offset-top="#navbar-main">
+    <div class="container d-flex align-items-center text-center text-lg-left">
+      <div class="col px-0">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="h1 mb-2 text-white"><%= @project.name %></h2>
+            <h3 class="font-weight-light text-white font-weight-light"><i><%= @project.company%></i></h3>
+            <div class="my-3">
+              <% @project.technologies.split(",").each do |tech| %>
+                <span class="badge badge-primary" style="background-color: #E67E22"><%= tech %></span>
+              <% end %>
+            </div>
+            <!--<div class="row mt-5">
+              <div class="col-sm-4">
+                <div class="card shadow-lg rounded-lg border-0 mb-sm-0">
+                  <div class="p-4 text-center">
+                    <p class="text-muted mb-2">Seniority level</p>
+                    <h5 class="mb-0"></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card shadow-lg rounded-lg border-0 mb-sm-0">
+                  <div class="p-4 text-center">
+                    <p class="text-muted mb-2">Contract duration</p>
+                    <h5 class="mb-0"></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card shadow-lg rounded-lg border-0 mb-sm-0">
+                  <div class="p-4 text-center">
+                    <p class="text-muted mb-2">Hours p/w</p>
+                    <h5 class="mb-0"></h5>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shape-container shape-position-bottom">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+        <path d="M 0 0 c 0 0 200 50 500 50 s 500 -50 500 -50 v 101 h -1000 v -100 z"></path>
+      </svg>
+    </div>
+  </div>
+</section>
+<section class="slice slice-lg pb-4">
+  <div class="container">
+    <div class="row justify-content-between mt-5 mb-5">
+      <div class="col-lg-3 text-lg-right">
+        <div class="row justify-content-end mb-4 align-items-center">
+          <h4 class="m-0">Sobre <em><%= @project.company%></em></h4>
+          <% if @project.photo.attached?%>
+            <%= cl_image_tag @project.photo.key, class: "avatar rounded-circle avatar-border ml-3" %>
+          <% end %>
+        </div>
+        <div class="justify-content-end flex-row mb-3">
+          <a href="" target="_blank"> <span class="svg-posting mx-1"> <%= %> </span></a>
+          <a href="" target="_blank"> <span class="svg-posting ml-1"> <%= %> </span></a>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <p><%= @project.company_description %></p>
+      </div>
+    </div>
+    <div class="row justify-content-between mb-5">
+      <div class="col-lg-3 text-lg-right">
+        <h4 class="mb-4">Tu rol con <em><%= @project.company%></em></h4>
+      </div>
+      <div class="col-lg-8">
+        <p><%= @project.description %></p>
+      </div>
+    </div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @project.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @project.description %>
-</p>
-
-<p>
-  <strong>User:</strong>
-  <%= @project.user_id %>
-</p>
-
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+    <div class="row justify-content-center align-items-center mt-3">
+      <%= link_to "Apply for this position!", class: "btn" %>
+    </div>
+  </div>
+</section>
