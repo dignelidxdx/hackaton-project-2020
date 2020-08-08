@@ -1,2 +1,88 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<section class="slice bg-ecodev pb-7 pt-0">
+  <div data-offset-top="#navbar-main">
+    <div class="container py-5">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-8 text-center">
+          <%= image_tag "landing_man.png" %>
+          <h1 class="text-white mb-5 landing-header">Una nueva forma de potenciar tu carrera generando impacto social</h1>
+          <%= link_to "¡Quiero ver proyectos!", projects_path, class: "btn btn-outline-white rounded-xl" %>
+        </div>
+      </div>
+    </div>
+    <div class="shape-container shape-position-bottom">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+        <path d="M 0 0 c 0 0 200 50 500 50 s 500 -50 500 -50 v 101 h -1000 v -100 z"></path>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="slice">
+  <div class="container">
+    <div class="row row-grid justify-content-around align-items-center">
+
+      <div class="col-md-5 text-center text-md-left">
+        <h5 class="h2">Candidates</h5>
+        <p class="lead my-4">TTRR works with individuals with a variety of backgrounds, particularly those with experience in private equity, management consulting, investment banking, or venture capital. We talk to all candidates individually to understand their interests and priorities for their next role and work hard to set them up for success in interviews and beyond. Our hope is to develop long-term relationships with all candidates to help them find their ideal roles both now and in the future.</p>
+        <a href="users/sign_up" class="btn bg-ecodev text-white">
+          <span class="btn-inner--text">Get started</span>
+        </a>
+
+      </div>
+      <div class="col-md-6">
+        <div class="client-group row justify-content-center">
+          <div class="col-md-6 order-md-1">
+            <%= image_tag("landing1.jpeg", class: "img-fluid rounded shadow-lg") %>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="slice bg-section-secondary">
+  <div class="container">
+    <div class="row row-grid justify-content-around align-items-center">
+      <div class="col-md-5 order-md-2 text-center text-md-left">
+        <h5 class="h2">Companies</h5>
+        <p class="lead my-4">TTRR helps companies of all sizes across industries find top talent. Our focus is on recruiting for general business roles, including operations, strategy, finance, analytics, customer success, growth, and marketing. No matter what role you are seeking to fill, our promise is that we will work diligently to help you find great candidates. For companies that are unsure what their hiring needs are, get in contact with us and we can help advise what type of individual might be your next best hire.</p>
+        <a href="users/sign_up" class="btn bg-ecodev text-white">
+          <span class="btn-inner--text">Get started</span>
+        </a>
+        <!-- <ul class="list-unstyled mb-0">
+          <li class="py-2">
+            <div class="align-items-center d-flex justify-content-center justify-content-md-start">
+              <div>
+                <div class="icon icon-shape bg-primary text-white icon-sm rounded-circle mr-3"><i
+                    class="fas fa-file-invoice"></i></div>
+              </div>
+              <div><span class="h6 mb-0">Lorem ipsum dolor sit amet</span></div>
+            </div>
+          </li>
+          <li class="py-2">
+            <div class="align-items-center d-flex justify-content-center justify-content-md-start">
+              <div>
+                <div class="icon icon-shape bg-primary text-white icon-sm rounded-circle mr-3"><i
+                    class="fas fa-store-alt"></i></div>
+              </div>
+              <div><span class="h6 mb-0">Lorem ipsum dolor sit amet</span></div>
+            </div>
+          </li>
+        </ul> -->
+      </div>
+      <div class="col-md-6 order-md-1">
+        <%= image_tag("landing2.jpeg", class: "img-fluid rounded shadow-lg") %>
+    </div>
+  </div>
+</section>
+
+<section class="slice clients delimiter-top delimiter-bottom">
+  <div class="container">
+    <div class="mb-5 text-center">
+      <h3>Lorem ipsum dolor sit amet, consectetur adipiscing</h3>
+      <div class="fluid-paragraph mt-3">
+        <p class="lead lh-180">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
