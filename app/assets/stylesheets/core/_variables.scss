@@ -37,7 +37,7 @@ $pink:    #f074ad !default;
 $red:     #f25767 !default;
 $orange:  #FFBE3D !default;
 $yellow:  #ffc431 !default;
-$green:   #5cc9a7 !default;
+$green:   #05C86A !default;
 $teal:    #50b5ff !default;
 $cyan:    #4bd6e5 !default;
 
@@ -58,7 +58,7 @@ $colors: map-merge((
   "gray-dark":  $gray-800
 ), $colors);
 
-$primary:       $blue !default;
+$primary:       $green !default;
 $secondary:     $gray-200 !default;
 $neutral:       $white !default;
 $success:       $green !default;
@@ -163,7 +163,7 @@ $section-colors: map-merge((
 
 $enable-caret:                                true !default;
 $enable-rounded:                              true !default;
-$enable-shadows:                              true !default;
+$enable-shadows:                              false !default;
 $enable-gradients:                            false !default;
 $enable-transitions:                          true !default;
 $enable-prefers-reduced-motion-media-query:   true !default;
