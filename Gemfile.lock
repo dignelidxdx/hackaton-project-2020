@@ -255,7 +255,6 @@ PLATFORMS
 
 DEPENDENCIES
   autoprefixer-rails
-  aws_cf_signer
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)

@@ -54,7 +54,7 @@
       <div class="col-lg-3 text-lg-right">
         <div class="row justify-content-end mb-4 align-items-center">
           <h4 class="m-0">Sobre <em><%= @project.company%></em></h4>
-          <% if @project.photo.attached?%>
+          <% if @project.photos.attached?%>
             <%= cl_image_tag @project.photos[0].key, class: "avatar rounded-circle avatar-border ml-3" %>
           <% end %>
         </div>
