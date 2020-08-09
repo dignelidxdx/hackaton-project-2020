@@ -1,0 +1,98 @@
+=> [[32m#<Project:0x00007fcf5d31eeb0[0m
+  id: [1;34m3[0m,
+  name: [31m[1;31m"[0m[31mProyecto de Control de Gestión[1;31m"[0m[31m[0m,
+  description:
+   [31m[1;31m"[0m[31mDesarrollar una plataforma de control de gestión entre entidades del Tercer Sector. El control de gestión es un elemento clave en la planificación estratégica de cualquier empresa u organización ya que permite a las entidades orientar su actividad para alcanzar los objetivos previstos en su estrategia[1;31m"[0m[31m[0m,
+  user_id: [1;34m2[0m,
+  created_at: [1;34;4mSun[0m, [1;34m09[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m18[0m:[1;34m34[0m:[1;34m27[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mSun[0m, [1;34m09[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m18[0m:[1;34m36[0m:[1;34m35[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  company: [31m[1;31m"[0m[31mAyuda en acción[1;31m"[0m[31m[0m,
+  company_description:
+   [31m[1;31m"[0m[31mSomos una ONG apartidista y aconfesional que lucha contra la pobreza y la desigualdad. Impulsamos la dignidad y la solidaridad para la construcción de un mundo justo.[1;35m\n[0m[31m  Tenemos más de 38 años de historia. Con tu ayuda hoy trabajamos en 20 países de América Latina, Asia, África y Europa, incluidos España y Portugal. Además, estamos desarrollando nuestra presencia en 3 nuevos países. En total apoyamos a más de 1,4 millones de personas.[1;31m"[0m[31m[0m,
+  company_website: [31m[1;31m"[0m[31mhttps://ayudaenaccion.org/ong/[1;31m"[0m[31m[0m,
+  duration: [31m[1;31m"[0m[31m90 horas[1;31m"[0m[31m[0m,
+  technologies: [31m[1;31m"[0m[31mJavaScript, HTML, CSS, PHP, ReactJS[1;31m"[0m[31m[0m[32m>[0m,
+ [32m#<Project:0x00007fcf5d4cf368[0m
+  id: [1;34m1[0m,
+  name: [31m[1;31m"[0m[31mCoProjectWater[1;31m"[0m[31m[0m,
+  description:
+   [31m[1;31m"[0m[31mManos unidas busca consolidar un proyecto que tiene como objetivo favorecer el acceso al agua potable en La Guajira. Con tu ayuda, podemos hacerlo realidad. Necesitamos una plataforma para que podamos promocionar por separado y hablar más de nuestro proyecto para que sea reconocida.[1;31m"[0m[31m[0m,
+  user_id: [1;34m2[0m,
+  created_at: [1;34;4mSun[0m, [1;34m09[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m18[0m:[1;34m34[0m:[1;34m18[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mSun[0m, [1;34m09[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m18[0m:[1;34m36[0m:[1;34m35[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  company: [31m[1;31m"[0m[31mManos unidas[1;31m"[0m[31m[0m,
+  company_description:
+   [31m[1;31m"[0m[31mManos unidas es una ONG española que trabaja en estrecha colaboración con 58 países del Sur. Tanto la sede de los Servicios Centrales como la de las 72 delegaciones están ubicadas en España. Manos Unidas NO tiene ni oficinas, ni delegaciones ni directivos fuera del territorio español, salvo excepciones requeridas por el trabajo con organismos oficiales (actualmente en Filipinas, Senegal y Ecuador). Ninguna organización o institución puede alegar que actúa en nombre o por delegación de Manos Unidas fuera de España[1;31m"[0m[31m[0m,
+  company_website: [31m[1;31m"[0m[31mhttps://www.manosunidas.org/[1;31m"[0m[31m[0m,
+  duration: [31m[1;31m"[0m[31m80 horas[1;31m"[0m[31m[0m,
+  technologies: [31m[1;31m"[0m[31mJavaScript, HTML, CSS, PHP, React[1;31m"[0m[31m[0m[32m>[0m,
+ [32m#<Project:0x00007fcf5d4cf250[0m
+  id: [1;34m2[0m,
+  name: [31m[1;31m"[0m[31mPlataforma del agua[1;31m"[0m[31m[0m,
+  description:
+   [31m[1;31m"[0m[31mNecesitamos construir una herramienta virtual orientada a contribuir y mejorar las políticas y estrategias en torno al Agua en Argentina. Este sistema posibilita acceder -de manera confiable y eficiente- a datos estadísticos, normativas, modelos de gestión, tecnologías y otros insumos para intervenir en los territorios[1;31m"[0m[31m[0m,
+  user_id: [1;34m2[0m,
+  created_at: [1;34;4mSun[0m, [1;34m09[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m18[0m:[1;34m34[0m:[1;34m24[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mSun[0m, [1;34m09[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m18[0m:[1;34m36[0m:[1;34m35[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  company: [31m[1;31m"[0m[31mSed Cero[1;31m"[0m[31m[0m,
+  company_description:
+   [31m[1;31m"[0m[31mEl Programa SEDCERO es la acción coordinada de diversos actores sociales para garantizar el acceso a agua segura para consumo, producción y saneamiento en Argentina, Bolivia y Paraguay, especialmente en la región del Gran Chaco Americano. Para ello, el Programa busca incidir en políticas y mejorar las capacidades actuales de resolución de problemas sociales a nivel de políticas, de gestión social y comunitaria.[1;31m"[0m[31m[0m,
+  company_website: [31m[1;31m"[0m[31mhttp://sedcero.org/[1;31m"[0m[31m[0m,
+  duration: [31m[1;31m"[0m[31m100 horas[1;31m"[0m[31m[0m,
+  technologies: [31m[1;31m"[0m[31mHTML, JS, CSS, SQL, React[1;31m"[0m[31m[0m[32m>[0m,
+ [32m#<Project:0x00007fcf5d4cf160[0m
+  id: [1;34m5[0m,
+  name: [31m[1;31m"[0m[31mCampaña de concientización[1;31m"[0m[31m[0m,
+  description:
+   [31m[1;31m"[0m[31mConstrucción de una landing que nos permita difundir nuestras causas, generando conciencia sobre las condiciones en las que trabajan los mineros, a menudo olvidados.[1;31m"[0m[31m[0m,
+  user_id: [1;34m2[0m,
+  created_at: [1;34;4mSun[0m, [1;34m09[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m18[0m:[1;34m34[0m:[1;34m37[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mSun[0m, [1;34m09[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m18[0m:[1;34m36[0m:[1;34m35[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  company: [31m[1;31m"[0m[31mNo a la mina[1;31m"[0m[31m[0m,
+  company_description:
+   [31m[1;31m"[0m[31mSomos una ong del tramo argentino de la Cordillera de los Andes. nuestra principal reivindicación, es la oposición a la minería de gran escala a cielo abierto (llamada megaminería en Argentina) por los efectos que tiene sobre su modo tradicional de vida y su medio ambiente.[1;31m"[0m[31m[0m,
+  company_website: [31m[1;31m"[0m[31mhttps://noalamina.org/[1;31m"[0m[31m[0m,
+  duration: [31m[1;31m"[0m[31m20 horas[1;31m"[0m[31m[0m,
+  technologies: [31m[1;31m"[0m[31mHTML, CSS, PHP, ReactJS[1;31m"[0m[31m[0m[32m>[0m,
+ [32m#<Project:0x00007fcf5d4cf070[0m
+  id: [1;34m4[0m,
+  name: [31m[1;31m"[0m[31mMapeo de bosques[1;31m"[0m[31m[0m,
+  description:
+   [31m[1;31m"[0m[31mNecesitamos una aplicación que integre un mapa que nos permita la gestión de los recursos forestales en argentina, de manera eficiente y rápida. Necesitamos desarrollar una plataforma que nos ayude a alcanzar este objetivo.[1;31m"[0m[31m[0m,
+  user_id: [1;34m2[0m,
+  created_at: [1;34;4mSun[0m, [1;34m09[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m18[0m:[1;34m34[0m:[1;34m32[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mSun[0m, [1;34m09[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m18[0m:[1;34m36[0m:[1;34m35[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  company: [31m[1;31m"[0m[31mArboles sin fronteras[1;31m"[0m[31m[0m,
+  company_description:
+   [31m[1;31m"[0m[31mSomos un grupo interesado en el cuidado del medioambiente.[1;35m\n[0m[31m  Entendiendo que cuidar del medioambiente implica cuidar del hombre , dé las múltiples especies y el único espacio (por ahora) para el desarrollo de la especie humana.[1;35m\n[0m[31m  Somos un grupo heterogéneo, con historias profesionales de dedicación a la salud, al desarrollo organizacional y al ambiente, y con participación voluntaria y profesional en diversas asociaciones civiles.[1;35m\n[0m[31m  Al grupo inicial vienen sumándose voluntarios de distintas ciudades, provincias y áreas del planeta, qué informados de nuestra iniciativa quieren aportar a esta tiempo y conocimientos ,así como ser enriquecidos por el placer de los logros y las nuevas experiencias.[1;31m"[0m[31m[0m,
+  company_website: [31m[1;31m"[0m[31mhttp://www.arbolessinfronteras.org.ar/[1;31m"[0m[31m[0m,
+  duration: [31m[1;31m"[0m[31m120 horas[1;31m"[0m[31m[0m,
+  technologies: [31m[1;31m"[0m[31mJavaScript, HTML, CSS, PHP, ReactJS[1;31m"[0m[31m[0m[32m>[0m,
+ [32m#<Project:0x00007fcf5d4cef58[0m
+  id: [1;34m6[0m,
+  name: [31m[1;31m"[0m[31mIntegración Donación Mercado pago[1;31m"[0m[31m[0m,
+  description:
+   [31m[1;31m"[0m[31mPara impulsar aún más las campañas de donación, necesitamos una nueva funcionalidad que permita a los donantes generar un link de pago desde nuestra web a mercado pago. Esta nueva herramienta busca facilitar incursionar en las donaciones de manera digital. [1;31m"[0m[31m[0m,
+  user_id: [1;34m2[0m,
+  created_at: [1;34;4mSun[0m, [1;34m09[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m18[0m:[1;34m34[0m:[1;34m41[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mSun[0m, [1;34m09[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m18[0m:[1;34m36[0m:[1;34m35[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  company: [31m[1;31m"[0m[31mTecho[1;31m"[0m[31m[0m,
+  company_description:
+   [31m[1;31m"[0m[31mSomos una organización presente en 19 países de América Latina, que busca superar la situación de pobreza que viven millones de personas en asentamientos populares, a través de la acción conjunta de sus habitantes y jóvenes voluntarios y voluntarias.[1;31m"[0m[31m[0m,
+  company_website: [31m[1;31m"[0m[31mhttps://www.techo.org/[1;31m"[0m[31m[0m,
+  duration: [31m[1;31m"[0m[31m40 horas[1;31m"[0m[31m[0m,
+  technologies: [31m[1;31m"[0m[31mHTML, CSS, PHP[1;31m"[0m[31m[0m[32m>[0m,
+ [32m#<Project:0x00007fcf5d4cedf0[0m
+  id: [1;34m7[0m,
+  name: [31m[1;31m"[0m[31mComunicación Manos Unidas[1;31m"[0m[31m[0m,
+  description:
+   [31m[1;31m"[0m[31mPlataforma que busca unir más al equipo de ONG creando espacios de trabajo, chat en equipo, videoconferencias, administración de documentos, grupos de extranet para usuarios externos y colaboración por correo electrónico[1;31m"[0m[31m[0m,
+  user_id: [1;34m2[0m,
+  created_at: [1;34;4mSun[0m, [1;34m09[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m18[0m:[1;34m34[0m:[1;34m46[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mSun[0m, [1;34m09[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m18[0m:[1;34m36[0m:[1;34m35[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  company: [31m[1;31m"[0m[31mManos Unidas[1;31m"[0m[31m[0m,
+  company_description:
+   [31m[1;31m"[0m[31mManos unidas es una ONG española que trabaja en estrecha colaboración con 58 países del Sur. Tanto la sede de los Servicios Centrales como la de las 72 delegaciones están ubicadas en España. Manos Unidas NO tiene ni oficinas, ni delegaciones ni directivos fuera del territorio español, salvo excepciones requeridas por el trabajo con organismos oficiales (actualmente en Filipinas, Senegal y Ecuador). Ninguna organización o institución puede alegar que actúa en nombre o por delegación de Manos Unidas fuera de España[1;31m"[0m[31m[0m,
+  company_website: [31m[1;31m"[0m[31mhttps://www.manosunidas.org/[1;31m"[0m[31m[0m,
+  duration: [31m[1;31m"[0m[31m60 horas[1;31m"[0m[31m[0m,
+  technologies: [31m[1;31m"[0m[31mHTML, JS, CSS, SQL, React[1;31m"[0m[31m[0m[32m>[0m]
