@@ -6,8 +6,13 @@
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
+  .avatar {
+    object-fit: cover;
+  }
 }
 
 .navbar-lewagon .navbar-brand img {
-  // width: 40px;
+  object-fit: cover;
 }
+
+
