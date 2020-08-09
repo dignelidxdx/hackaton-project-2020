@@ -1,7 +1,7 @@
-<div class="tab-pane fade show <%= state == 'confirmada' ? 'active' : '' %>" id="pills-<%= state %>" role="tabpanel" aria-labelledby="pills-<%= state %>-tab">
+<div class="tab-pane fade show <%= state == 'pendiente' ? 'active' : '' %>" id="pills-<%= state %>" role="tabpanel" aria-labelledby="pills-<%= state %>-tab">
 <% unless current_user.projects.any? %>
   <% interests.each do |interest| %>
-  <div class="d-flex align-items-center shadow-lg mb-5 bg-white rounded">
+  <div class="d-flex align-items-center shadow-lg mb-5 bg-white rounded overflow-hidden">
     <div class="flex-grow-1">
       <%= link_to project_path(interest.project), class:"d-flex align-items-center" do %>
       <%= cl_image_tag interest.project.photos[0].key, class:"", width:"150" %>

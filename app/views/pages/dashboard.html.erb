@@ -2,18 +2,18 @@
   <h1 class="mb-3 h5 mt-5 border-bottom border-2 border-primary">Solicitudes de proyectos</h1>
   <ul class="nav nav-pills nav-fill mb-4" id="pills-tab" role="tablist">
     <% ProjectInterest::STATE.each do |state| %>
-    <li class="nav-item">
-      <a class="nav-link <%= state == 'confirmada' ? 'active' : '' %>" id="pills-<%= state %>-tab" data-toggle="pill" href="#pills-<%= state %>" role="tab" aria-controls="pills-<%= state %>" aria-selected="true"><%= state.capitalize %>s</a>
-    </li>
+      <li class="nav-item">
+        <a class="nav-link <%= state == 'pendiente' ? 'active' : '' %>" id="pills-<%= state %>-tab" data-toggle="pill" href="#pills-<%= state %>" role="tab" aria-controls="pills-<%= state %>" aria-selected="true"><%= state.capitalize %>s</a>
+      </li>
     <% end %>
   </ul>
   <div class="tab-content" id="pills-tabContent">
     <% ProjectInterest::STATE.each do |state| %>
-    <% if current_user.projects.any? %>
-    <%= render "shared/status", state: state, interests: current_user.dev_interests.select { |interest| interest.status == state } %>
-    <% else %>
-    <%= render "shared/status", state: state, interests: current_user.project_interests.select { |interest| interest.status == state } %>
-    <% end %>
+      <% if current_user.projects.any? %>
+        <%= render "shared/status", state: state, interests: current_user.dev_interests.select { |interest| interest.status == state } %>
+      <% else %>
+        <%= render "shared/status", state: state, interests: current_user.project_interests.select { |interest| interest.status == state } %>
+      <% end %>
     <% end %>
   </div>
 </div>
