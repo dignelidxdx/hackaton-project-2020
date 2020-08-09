@@ -28,7 +28,11 @@
         <%= cl_image_tag interest.project.photos[0].key, class:"", width:"150" %>
         <div class="m-0 ml-2 p-3">
           <h2 class="m-0 h4"><%= interest.project.name %></h2>
-          <p class="m-0 h6 text-muted"><small><strong><%= interest.user.full_name.capitalize %></strong></small></p>
+          <% if interest.user.first_name %>
+            <p class="m-0 h6 text-muted"><small><strong><%= interest.user.full_name.capitalize %></strong></small></p>
+          <% else %>
+            <p class="m-0 h6 text-muted"><small><strong><%= interest.user.email %></strong></small></p>
+          <% end %>
         </div>
         <% end %>
       </div>
