@@ -83,7 +83,7 @@ project5.photos.attach(io: open("app/assets/images/project52.jpeg"), filename: "
 
 project6 = Project.create(user:creator,
   name: "Campaña de concientización",
-  description: "Construcción de una landing que nos permita difundir nuestras causas ",
+  description: "Construcción de una landing que nos permita difundir nuestras causas, generando conciencia sobre las condiciones en las que trabajan los mineros, a menudo olvidados.",
   company: "No a la mina",
   company_description: "Somos una ong del tramo argentino de la Cordillera de los Andes. nuestra principal reivindicación, es la oposición a la minería de gran escala a cielo abierto (llamada megaminería en Argentina) por los efectos que tiene sobre su modo tradicional de vida y su medio ambiente.",
   company_website: "https://noalamina.org/",

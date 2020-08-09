@@ -22,10 +22,25 @@
       <% @projects.each do |project| %>
         <%= link_to project_path(project), class: "card-link" do %>
           <div class="card-trip">
-            <%= cl_image_tag project.photos[0].key %>
+            <div class="card-category-lewagon" style="background-image: url(<%= rails_blob_url( project.photos[0]) %>);
+              background-size: cover;
+              background-position: center;
+              height: 180px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: white;
+              font-size: 24px;
+              font-weight: bold;
+              text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+              border-radius: 5px;
+              box-shadow: 0 0 15px rgba(0,0,0,0.2)">
+              <%= project.company %>
+            </div>
             <div class="card-trip-infos">
               <div>
-                <h2><%= project.company %></h2>
+                <h2><%= project.name %></h2>
+                <span><i><%= project.technologies %></i></span>
                 <p><%= project.description.truncate_words(20) %></p>
               </div>
             </div>
