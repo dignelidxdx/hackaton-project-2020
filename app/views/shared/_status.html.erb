@@ -1,33 +1,24 @@
 <div class="tab-pane fade show <%= state == 'confirmada' ? 'active' : '' %>" id="pills-<%= state %>" role="tabpanel" aria-labelledby="pills-<%= state %>-tab">
-  <div class="table-wrapper-scroll-y my-custom-scrollbar">
-    <% unless current_user.projects.any? %>
-      <% interests.each do |interest| %>
-          <div class="card-body">
-            <div class="row row-grid align-items-center">
-              <div class="col-lg-8">
-                <div class="media align-items-center">
-                  <%= cl_image_tag interest.project.photos[0].key, class: "avatar bg-danger text-white rounded-circle mr-3" %>
-                  <div class="media-body">
-                    <%= link_to project_path(interest.project), class: "card-link" do %>
-                      <h5 class="mb-0"><%= interest.project.name %></h5>
-                      <p class="text-muted lh-150 text-sm mb-0"><%= interest.project.company %></p>
-                    <% end %>
-                  </div>
-                </div>
-              </div>
-              <% case state %>
-              <% when "pendiente" %>
-                <div class="col-auto flex-fill mt-4 mt-sm-0 text-sm-right d-none d-lg-block">
-                  <%= link_to "Cancelar", project_interest_path(interest, project_interest: { status: "cancelada" }), method: :patch, class: "btn btn-ghost" %>
-                </div>
-              <% when "cancelada" %>
-                <div class="col-auto flex-fill mt-4 mt-sm-0 text-sm-right d-none d-lg-block">
-                  <%= link_to "Borrar", project_interest_path(interest), method: :delete, class: "btn btn-ghost", data: { confirm: "¿Estás seguro?" } %>
-                </div>
-              <% end %>
-            </div>
-          </div>
+<% unless current_user.projects.any? %>
+  <% interests.each do |interest| %>
+  <div class="d-flex align-items-center shadow-lg mb-5 bg-white rounded">
+    <div class="flex-grow-1">
+      <%= link_to project_path(interest.project), class:"d-flex align-items-center" do %>
+      <%= cl_image_tag interest.project.photos[0].key, class:"", width:"150" %>
+      <div class="m-0 ml-2">
+        <h2 class="m-0 h4"><%= interest.project.name %></h2>
+        <p class="m-0 h6 text-muted"><small><strong><%= interest.project.company.upcase %></strong></small></p>
+      </div>
       <% end %>
-    <% end %>
+    </div>
+    <div class="flex-grow-0">
+      <% if state == 'pendiente' %>
+      <%= link_to "Cancelar", project_interest_path(interest, project_interest: { status: "cancelada" }), method: :patch, class: "btn btn-outline-danger btn-sm mr-3" %>
+      <% elsif state == 'cancelada' %>
+      <%= link_to "Borrar", project_interest_path(interest), method: :delete, class: "btn btn-outline-primary btn-sm mr-3", data: { confirm: "¿Estás seguro?" } %>
+      <% end %>
+    </div>
   </div>
+  <% end %>
+<% end %>
 </div>
