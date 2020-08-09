@@ -7,6 +7,14 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 puts "Creating users..."
 
+dev = User.create(first_name: "Deve",
+  last_name: "Loper",
+  email: "dev@mail.com",
+  password: "123456",
+  password_confirmation: "123456")
+
+dev.photo.attach(io: open("app/assets/images/user1.jpeg"), filename: "user1.jpeg", content_type: 'image/jpeg')
+
 carlos = User.create(first_name: "Carlos",
   last_name: "Juarez",
   email: "carlos@mail.com",

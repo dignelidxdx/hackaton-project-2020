@@ -10,6 +10,7 @@ class ProjectInterestsController < ApplicationController
   # GET /project_interests/1
   # GET /project_interests/1.json
   def show
+    @projects = Project.last(3)
   end
 
   # GET /project_interests/new
@@ -25,29 +26,22 @@ class ProjectInterestsController < ApplicationController
   # POST /project_interests.json
   def create
     @project_interest = ProjectInterest.new(project_interest_params)
+    @project_interest.interest = true
 
-    respond_to do |format|
-      if @project_interest.save
-        format.html { redirect_to @project_interest, notice: 'Project interest was successfully created.' }
-        format.json { render :show, status: :created, location: @project_interest }
-      else
-        format.html { render :new }
-        format.json { render json: @project_interest.errors, status: :unprocessable_entity }
-      end
+    if @project_interest.save
+      redirect_to @project_interest, notice: '¡Tu aplicación fue enviada con éxito!'
+    else
+      redirect_to project_path(@project_interest.project), notice: 'Hubo un error. Por favor contacta a nuestro equipo'
     end
   end
 
   # PATCH/PUT /project_interests/1
   # PATCH/PUT /project_interests/1.json
   def update
-    respond_to do |format|
-      if @project_interest.update(project_interest_params)
-        format.html { redirect_to @project_interest, notice: 'Project interest was successfully updated.' }
-        format.json { render :show, status: :ok, location: @project_interest }
-      else
-        format.html { render :edit }
-        format.json { render json: @project_interest.errors, status: :unprocessable_entity }
-      end
+    if @project_interest.update(project_interest_params)
+      redirect_to dashboard_path, notice: '¡Actualizado con éxito!'
+    else
+      redirect_to dashboard_path, notice: 'Hubo un error. Por favor contacta a nuestro equipo'
     end
   end
 
@@ -55,21 +49,18 @@ class ProjectInterestsController < ApplicationController
   # DELETE /project_interests/1.json
   def destroy
     @project_interest.destroy
-    respond_to do |format|
-      format.html { redirect_to project_interests_url, notice: 'Project interest was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    redirect_to dashboard_path, notice: '¡Borrado con éxito!'
   end
 
   private
 
-    # Use callbacks to share common setup or constraints between actions.
-    def set_project_interest
-      @project_interest = ProjectInterest.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_project_interest
+    @project_interest = ProjectInterest.find(params[:id])
+  end
 
-    # Only allow a list of trusted parameters through.
-    def project_interest_params
-      params.require(:project_interest).permit(:project_id, :user_id, :favorite, :interest, :status)
-    end
+  # Only allow a list of trusted parameters through.
+  def project_interest_params
+    params.require(:project_interest).permit(:project_id, :user_id, :status)
+  end
 end

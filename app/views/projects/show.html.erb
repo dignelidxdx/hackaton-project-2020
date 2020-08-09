@@ -48,7 +48,7 @@
     </div>
   </div>
 </section>
-<section class="slice slice-lg pb-4">
+<section class="slice slice-lg pb-4 pt-0">
   <div class="container">
     <div class="row justify-content-between mt-5 mb-5">
       <div class="col-lg-3 text-lg-right">
@@ -77,7 +77,12 @@
     </div>
 
     <div class="row justify-content-center align-items-center mt-3">
-      <%= link_to "Apply for this position!", class: "btn" %>
+      <%= simple_form_for ProjectInterest.new do |f| %>
+        <%= f.hidden_field :project_id, value: @project.id %>
+        <%= f.hidden_field :user_id, value: current_user.id if user_signed_in? %>
+        <%= f.hidden_field :status, value: "pendiente"%>
+        <%= f.submit "¡Aplicar!", class: "btn btn-warning" %>
+      <% end %>
     </div>
   </div>
 </section>

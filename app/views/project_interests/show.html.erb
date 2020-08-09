@@ -1,29 +1,38 @@
-<p id="notice"><%= notice %></p>
+<section class="slice bg-white pt-0">
+  <div data-offset-top="#navbar-main">
+    <div class="container py-5">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-8 text-center mb-5">
+          <h4>¡Gracias por colaborar con nosotros!</h4>
+          <h6>Tu aplicación está siendo revisada. Podés ver el estado de tus aplicaciones <em> <%= link_to "aquí", dashboard_path, class: "card-link" %> </em> </h6>
+        </div>
+      </div>
+    </div>
+    <div class="shape-container shape-position-bottom shape-reverse">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+        <path d="M 0 0 c 0 0 200 50 500 50 s 500 -50 500 -50 v 101 h -1000 v -100 z"></path>
+      </svg>
+    </div>
+  </div>
+</section>
 
-<p>
-  <strong>Project:</strong>
-  <%= @project_interest.project_id %>
-</p>
-
-<p>
-  <strong>User:</strong>
-  <%= @project_interest.user_id %>
-</p>
-
-<p>
-  <strong>Favorite:</strong>
-  <%= @project_interest.favorite %>
-</p>
-
-<p>
-  <strong>Interest:</strong>
-  <%= @project_interest.interest %>
-</p>
-
-<p>
-  <strong>Status:</strong>
-  <%= @project_interest.status %>
-</p>
-
-<%= link_to 'Edit', edit_project_interest_path(@project_interest) %> |
-<%= link_to 'Back', project_interests_path %>
+<section class="slice bg-ecodev pt-0">
+  <div class="container text-center">
+    <h4 class="text-white">¡No te quedes esperando! Ofrecemos proyectos similares</h4>
+    <div class="cards p-3 mt-5">
+      <% @projects.each do |project| %>
+        <%= link_to project_path(project), class: "card-link" do %>
+          <div class="card-trip">
+            <%= cl_image_tag project.photo.key %>
+            <div class="card-trip-infos">
+              <div>
+                <h2><%= project.company %></h2>
+                <p><%= project.description.truncate_words(20) %></p>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</section>
