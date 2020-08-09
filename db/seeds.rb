@@ -5,6 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts "Deleting previous records..."
+
+User.destroy_all
+Project.destroy_all
+
 puts "Creating users..."
 
 dev = User.create(first_name: "Deve",
@@ -23,7 +28,7 @@ creator = User.create(first_name: "Liliana",
 
 creator.photo.attach(io: open("app/assets/images/user2.jpeg"), filename: "user2.jpeg", content_type: 'image/jpeg')
 
-puts "Creating projects"
+puts "Creating projects..."
 
 project1 = Project.create(user: creator,
 name: "CoProjectWater",
