@@ -1,0 +1,122 @@
+.button-a {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    align-content: center;
+    padding: 0 10px;
+    background: #05C86A;
+    border-radius: 27.5px;
+    border: solid #05C86A 1px;
+    text-decoration:none;
+}
+.button-a h2 {
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.button-b {
+    display: flex;
+    width: 110px;
+    align-items: center;
+    align-content: center;
+    padding: 0 10px;
+    background: #05C86A;
+    border-radius: 27.5px;
+    text-decoration:none;
+}
+
+.button-b h2{
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.About-ability {
+  border-radius: 20px;
+  font-size: 30px;
+  color:white;
+  text-align: center;
+  background: #05C86A;
+}
+
+.MiniBlog {
+    padding-top: 0;
+}
+.MiniBlog-mas-title {
+    padding: 30px 10px;
+}
+.MiniBlog-mas {
+    border-radius: 10px;
+    margin: 20px 5px;
+    padding: 5px;
+    background-color: #05C86A;
+    color: white;
+    text-decoration: none;
+}
+.MiniBlog-mas:hover {
+    background-color:#05C86A;
+    color: #05C86A;
+}
+.card-blog .card-body {
+    position: relative;
+  }
+
+  .card-blog .card-category-box {
+    position: absolute;
+    text-align: center;
+    top: -16px;
+    left: 15px;
+    right: 15px;
+    line-height: 25px;
+    overflow: hidden;
+  }
+
+  .card-blog .card-category {
+    display: inline-block;
+    color: white;
+    padding: 0 15px 5px;
+    overflow: hidden;
+    background-color: #05C86A;
+    border-radius: 4px;
+  }
+
+  .card-img img  {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .card-blog .card-category .category {
+    color: white;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: .7rem;
+    letter-spacing: .1px;
+    margin-bottom: 0;
+  }
+
+  .card-category h6, .card-title a, .post-author a{
+      color:#05C86A;
+  }
+
+  .card-blog .card-title {
+    font-size: 1.3rem;
+    margin-top: .6rem;
+  }
+
+  .card-blog .card-description {
+    color: #4e4e4e;
+  }
+
+  .card-blog .post-author {
+    display: inline-block;
+  }
+
+  .card-blog .post-date {
+    color: #4e4e4e;
+    display: inline-block;
+    float: right;
+  }
