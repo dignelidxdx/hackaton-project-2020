@@ -21,26 +21,14 @@
     <div class="cards p-3 mt-5">
       <% @projects.each do |project| %>
         <%= link_to project_path(project), class: "card-link" do %>
-          <div class="card-trip">
-            <div class="card-category-lewagon" style="background-image: url(<%= rails_blob_url( project.photos[0]) %>);
-              background-size: cover;
-              background-position: center;
-              height: 180px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              color: white;
-              font-size: 24px;
-              font-weight: bold;
-              text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-              border-radius: 5px;
-              box-shadow: 0 0 15px rgba(0,0,0,0.2)">
+          <div class="card-trip h-100">
+            <div class="card-category-lewagon" style="background-image: url(<%= rails_blob_url( project.photos[0]) %>);">
               <%= project.company %>
             </div>
             <div class="card-trip-infos">
               <div>
-                <h2><%= project.name %></h2>
-                <span><i><%= project.technologies %></i></span>
+                <div class="card-techs"><%= project.technologies %></div>
+                <h2 class="my-2"><%= project.name %></h2>
                 <p><%= project.description.truncate_words(20) %></p>
               </div>
             </div>
