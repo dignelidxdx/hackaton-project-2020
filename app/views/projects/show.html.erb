@@ -25,11 +25,11 @@
 <section class="slice slice-lg pb-4 pt-0">
   <div class="container">
     <div class="row justify-content-between mt-5 mb-5">
-      <div class="col-lg-3 text-lg-right">
+      <div class="col-lg-3 text-lg-right p-0">
         <div class="row justify-content-end mb-4 align-items-center">
           <h4 class="m-0">Sobre <em><%= @project.company%></em></h4>
         </div>
-        <%= cl_image_tag @project.photos[1].key, class: "rounded-circle avatar-2xl" %>
+        <%= cl_image_tag @project.photos[1].key, class: "rounded-circle avatar-lg" %>
         <div class="justify-content-end flex-row mb-3">
           <a href="" target="_blank"> <span class="svg-posting mx-1"> <%= %> </span></a>
           <a href="" target="_blank"> <span class="svg-posting ml-1"> <%= %> </span></a>
@@ -40,7 +40,7 @@
       </div>
     </div>
     <div class="row justify-content-between mb-5">
-      <div class="col-lg-3 text-lg-right">
+      <div class="col-lg-3 text-lg-right p-0">
         <h4 class="mb-4">Tu rol con <em><%= @project.company%></em></h4>
       </div>
       <div class="col-lg-8">
