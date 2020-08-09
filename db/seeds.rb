@@ -67,7 +67,7 @@ project4.photos.attach(io: open("app/assets/images/project42.png"), filename: "p
 
 project5 = Project.create(user: creator,
   name: "Mapeo de bosques",
-  description: "Necesitamos una aplicación que integre un mapa que nos permita  la gestión de los recursos forestales en argentina",
+  description: "Necesitamos una aplicación que integre un mapa que nos permita la gestión de los recursos forestales en argentina, de manera eficiente y rápida. Necesitamos desarrollar una plataforma que nos ayude a alcanzar este objetivo.",
   company: "Arboles sin fronteras",
   company_description: "Somos un grupo interesado en el cuidado del medioambiente.
   Entendiendo que cuidar del medioambiente implica cuidar del hombre , dé las múltiples especies y el único espacio (por ahora) para el desarrollo de la especie humana.
