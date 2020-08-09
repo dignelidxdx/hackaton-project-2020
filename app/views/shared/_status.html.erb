@@ -6,7 +6,7 @@
             <div class="row row-grid align-items-center">
               <div class="col-lg-8">
                 <div class="media align-items-center">
-                  <%= cl_image_tag interest.project.photo.key, class: "avatar bg-danger text-white rounded-circle mr-3" %>
+                  <%= cl_image_tag interest.project.photos[0].key, class: "avatar bg-danger text-white rounded-circle mr-3" %>
                   <div class="media-body">
                     <%= link_to project_path(interest.project), class: "card-link" do %>
                       <h5 class="mb-0"><%= interest.project.name %></h5>

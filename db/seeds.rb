@@ -50,7 +50,7 @@ carlos_project = Project.create(user: carlos,
   duration: "40 hours",
   technologies: "HTML, JS, CSS, SQL")
 
-carlos_project.photo.attach(io: open("app/assets/images/project1.jpeg"), filename: "project1.jpeg", content_type: 'image/jpeg')
+carlos_project.photos.attach(io: open("app/assets/images/project1.jpeg"), filename: "project1.jpeg", content_type: 'image/jpeg')
 
 liliana_project = Project.create(user: liliana,
   name: "This is another project",
@@ -65,7 +65,7 @@ liliana_project = Project.create(user: liliana,
   duration: "35 hours",
   technologies: "React, SQL")
 
-liliana_project.photo.attach(io: open("app/assets/images/project1.jpeg"), filename: "project1.jpeg", content_type: 'image/jpeg')
+liliana_project.photos.attach(io: open("app/assets/images/project1.jpeg"), filename: "project1.jpeg", content_type: 'image/jpeg')
 
 
 end

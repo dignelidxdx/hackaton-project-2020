@@ -23,7 +23,7 @@
       <% @projects.each do |project| %>
         <%= link_to project_path(project), class: "card-link" do %>
           <div class="card-trip">
-            <%= cl_image_tag project.photo.key %>
+            <%= cl_image_tag project.photos[0].key %>
             <div class="card-trip-infos">
               <div>
                 <h2><%= project.company %></h2>
