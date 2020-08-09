@@ -53,6 +53,7 @@
         <%= f.hidden_field :project_id, value: @project.id %>
         <%= f.hidden_field :user_id, value: current_user.id if user_signed_in? %>
         <%= f.hidden_field :status, value: "pendiente"%>
+        <a href="#" class="btn btn-outline-success">¡Donar!</a>
         <%= f.submit "¡Aplicar!", class: "btn btn-warning" %>
       <% end %>
     </div>

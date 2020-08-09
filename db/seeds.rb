@@ -13,8 +13,8 @@ User.destroy_all
 
 puts "Creating users..."
 
-dev = User.create(first_name: "Deve",
-  last_name: "Loper",
+dev = User.create(first_name: "Carlos",
+  last_name: "Villegas",
   email: "dev@mail.com",
   password: "123456",
   password_confirmation: "123456")
