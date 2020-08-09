@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 puts "Deleting previous records..."
 
+ProjectInterest.destroy_all
 Project.destroy_all
 User.destroy_all
 
